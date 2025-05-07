@@ -1,0 +1,23 @@
+{
+  "name": "supabase-keep-alive",
+  "version": "1.0.0",
+  "description": "A solution to keep Supabase database active by periodically listing tables and querying records",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "supabase functions deploy database-inspector",
+    "login": "supabase login",
+    "link": "supabase link",
+    "secrets:set": "supabase secrets set"
+  },
+  "keywords": [
+    "supabase",
+    "edge-functions",
+    "database",
+    "keep-alive"
+  ],
+  "author": "Tong",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.8.0"
+  }
+}
